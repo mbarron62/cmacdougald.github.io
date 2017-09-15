@@ -1,5 +1,10 @@
 # Game Review
 
+# Details
+
+* Game Title: 
+
+
 # Summary
 
 This game is about...
