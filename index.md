@@ -5,4 +5,4 @@
 # Education
 
 # Portfolio
-Check out my various [projects](portfolio).
+Check out my various [projects](portfolio.md).
