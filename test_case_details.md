@@ -42,6 +42,7 @@
 
 ## Run History:
 | # |	Run Date |	Run By |	Results |
+| --- | --- | --- | --- |
 | 1 | | | |			
 | 2 | | | |			
 | 3 | | | |			
