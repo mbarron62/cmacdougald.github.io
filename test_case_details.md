@@ -24,6 +24,7 @@
   * Description
 ## Test Steps: 
 | # | Description | Expected Result | Check (√) |
+| --- | --- | --- | --- |
 | 1 | | | |			
 | 2 | | | |			
 | 3 | | | |			
