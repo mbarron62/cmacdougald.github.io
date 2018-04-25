@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -7,7 +7,7 @@ const int INT_ROWS = 3;
 const int INT_COLUMNS = 3;
 
 void printBoard(char aryBoard[][INT_COLUMNS], int intRows) {
-	cout << "Column:\t0\t1\2" << endl;
+	cout << "Column:\t0\t1\t2" << endl;
 	for (int intRow = 0; intRow < intRows; intRow++) {
 		cout << "Row " << (intRow);
 		for (int intColumn = 0; intColumn < INT_COLUMNS; intColumn++) {
