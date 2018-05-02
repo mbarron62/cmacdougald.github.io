@@ -34,9 +34,26 @@ int Card::getSuiteValue()
 
 std::string Card::getFaceString()
 {
-	return "";
+	//Function to get the face as a string of a card
+	std::string strFace = "";
+	switch (this->getFaceValue()) {
+	case 1:
+		strFace = "Ace";
+		break;
+	case 11:
+		strFace = "Jack";
+		break;
+	case 12:
+		strFace = "Queen";
+		break;
+	case 13:
+		strFace = "King";
+		break;
+	default:
+		strFace += std::to_string(this->getFaceValue());
+	}
+	return strFace;
 }
-
 
 std::string Card::getSuiteString()
 {
