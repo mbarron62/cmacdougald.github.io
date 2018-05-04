@@ -22,7 +22,12 @@ void DiscardPile::clear()
 
 Card DiscardPile::getTopCard()
 {
-	return this->vtrDiscardPile.at(this->vtrDiscardPile.size() - 1);
+	if (this->vtrDiscardPile.size() <= 0)
+	{
+		return NULL;
+	}
+	Card cardTop = this->vtrDiscardPile.back();
+	return cardTop;
 }
 
 
@@ -36,6 +41,10 @@ void DiscardPile::addCard(Card cardDiscarded)
 
 bool DiscardPile::checkValidCard(Card cardIsValid)
 {
-	return (this->getTopCard().getFaceValue() == cardIsValid.getFaceValue() ||
-		this->getTopCard().getSuiteValue() == cardIsValid.getSuiteValue());
+	if (this->vtrDiscardPile.size() <= 0) {
+		return false;
+	}
+	bool boolFace = this->getTopCard().getFaceValue() == cardIsValid.getFaceValue();
+	bool boolSuite = this->getTopCard().getSuiteValue() == cardIsValid.getSuiteValue();
+	return (boolFace || boolSuite);
 }

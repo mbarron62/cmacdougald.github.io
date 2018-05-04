@@ -12,6 +12,6 @@ public:
 	void clear();
 	Card getTopCard();
 	void addCard(Card cardDiscarded);
-	
+	bool checkValidCard(Card cardIsValid);
 };
 
