@@ -42,7 +42,7 @@ void DiscardPile::addCard(Card cardDiscarded)
 bool DiscardPile::checkValidCard(Card cardIsValid)
 {
 	if (this->vtrDiscardPile.size() <= 0) {
-		return false;
+		return true;
 	}
 	bool boolFace = this->getTopCard().getFaceValue() == cardIsValid.getFaceValue();
 	bool boolSuite = this->getTopCard().getSuiteValue() == cardIsValid.getSuiteValue();
