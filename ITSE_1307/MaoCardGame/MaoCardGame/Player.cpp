@@ -58,6 +58,7 @@ void Player::inputBet()
 	int intBet = 0;
 	do {
 		std::cout << "Please enter your bet (1 - " << this->getMoney() << "): " << std::endl;
+		std::cin >> intBet;
 	} while (intBet <= 0 || intBet > this->getMoney());
 	this->setBet(intBet);
 }
